@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jquery.toggle-visibility test cases</title>
+    <script src='node_modules/jquery/dist/jquery.js'></script>
+    <script src='src/jquery.toggle-visibility.js'></script>
+    <style>
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <h1>jquery.toggle-visibility</h1>
+
+    <h2>Checkbox</h2>
+
+    <form>
+      <label>
+        <input type='checkbox' data-toggle-element='.checkbox-is-checked'></form>
+        Check me
+      </label>
+    </form>
+
+    <div class='checkbox-is-checked'>The checkbox is checked!</div>
+
+    <h2>Radio</h2>
+
+    <form>
+      <label>
+        <input type='radio' name='radio-buttons' value='one' data-toggle-element='.radio-button-selections'>
+        One
+      </label>
+      <label>
+        <input type='radio' name='radio-buttons' value='two' data-toggle-element='.radio-button-selections'>
+        Two
+      </label>
+      <label>
+        <input type='radio' name='radio-buttons' value='three' data-toggle-element='.radio-button-selections'>
+        Three
+      </label>
+    </form>
+
+    <div class='radio-button-selections' data-toggle-element-value='one'>One is selected</div>
+    <div class='radio-button-selections' data-toggle-element-value='two'>Two is selected</div>
+    <div class='radio-button-selections' data-toggle-element-value='three'>Three is selected</div>
+
+    <h2>Select</h2>
+
+    <form>
+      <select data-toggle-element='.select-selections'>
+        <option></option>
+        <option value='one'>One</option>
+        <option value='two'>Two</option>
+        <option value='three'>Three</option>
+      </select>
+    </form>
+
+    <div class='select-selections' data-toggle-element-value-none='true'>No selection</div>
+    <div class='select-selections' data-toggle-element-value-any='true'>Selection made</div>
+    <div class='select-selections' data-toggle-element-value='one'>One is selected</div>
+    <div class='select-selections' data-toggle-element-value='two'>Two is selected</div>
+    <div class='select-selections' data-toggle-element-value='three'>Three is selected</div>
+
+    <script type='text/javascript'>
+      $(function() {
+        $('input[data-toggle-element], select[data-toggle-element]').toggleVisibility();
+      });
+    </script>
+  </body>
+</html>
