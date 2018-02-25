@@ -36,6 +36,14 @@ $(function() {
 });
 ```
 
+Currently, the plugin hides elements by simply adding the "hidden" class to them, so you should have something like the following in your CSS:
+
+```css
+.hidden { display: none; }
+```
+
+If you are using Bootstrap, this utility class should already be present.
+
 ### Checkbox
 
 Simply give a checkbox input a `data-toggle-element` of the selector you wish to hide/show as that checkbox is checked/unchecked.
