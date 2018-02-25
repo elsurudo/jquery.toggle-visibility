@@ -22,7 +22,7 @@ Using nesting, you can make some pretty complex interactions possible without wr
 
 ### manual
 
-Just [download the source file here](https://raw.github.com/elsurudo/jquery-toggle-visibility/src/jquery.toggle-visibility.js), and place a referece to it in your document's head. Make sure to include jQuery first.
+Just [download the source file here](https://raw.githubusercontent.com/elsurudo/jquery.toggle-visibility/master/src/jquery.toggle-visibility.js), and place a referece to it in your document's head. Make sure to include jQuery first.
 
 ## Usage
 
@@ -87,3 +87,20 @@ Give each of the elements that you wish to hide/show a `data-toggle-element-valu
 Add a `data-toggle-element-value-none` for an element to be shown when no selection is made.
 
 Add a `data-toggle-element-value-any` for an element to be shown when _any_ selection is made.
+
+```html
+<form>
+  <select data-toggle-element='.select-selections'>
+    <option></option>
+    <option value='one'>One</option>
+    <option value='two'>Two</option>
+    <option value='three'>Three</option>
+  </select>
+
+  <div class='select-selections' data-toggle-element-value-none='true'>No selection</div>
+  <div class='select-selections' data-toggle-element-value-any='true'>Selection made</div>
+  <div class='select-selections' data-toggle-element-value='one'>Selection: One</div>
+  <div class='select-selections' data-toggle-element-value='two'>Selection: Two</div>
+  <div class='select-selections' data-toggle-element-value='three'>Selection: Three</div>
+</form>
+```
