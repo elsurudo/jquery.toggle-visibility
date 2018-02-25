@@ -1,26 +1,3 @@
-// Checkbox:
-// ---------
-// Give a checkbox input a `data-toggle-element` of the selector you wish to hide/show
-// as that checkbox is checked/unchecked.
-
-// Radio button:
-// -------------
-// Give all related radio button inputs a `data-toggle-element` of the selector that selects
-// all the possible elements you wish to hide/show based on the value of the radio button.
-// There should be one element per possible value of the radio button.
-// Give each of the elements that you wish to hide/show a `data-toggle-element-value` that corresponds
-// to a possible value of the aforementioned radio button group.
-
-// Select:
-// -------
-// Give a select tag a `data-toggle-element` of the selector that selects all the possible
-// elements you wish to hide/show based on the value of the select.
-// There should be one element per possible value of the select.
-// Give each of the elements that you wish to hide/show a `data-toggle-element-value` that corresponds
-// to a possible value of the aforementioned select.
-// Add a `data-toggle-element-value-none` for an element to be shown when no selection is made.
-// Add a `data-toggle-element-value-any` for an element to be shown when _any_ selection is made.
-
 (function ($) {
   $.fn.toggleVisibility = function() {
     const changeFn = function() {

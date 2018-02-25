@@ -1,0 +1,30 @@
+{
+  "name": "jquery.toggle-visibility",
+  "version": "0.9.0",
+  "description": "A jQuery plugin to declaratively toggle the visibility of elements based on form input selections.",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsurudo/jquery.toggle-visibility.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "toggle",
+    "visibility",
+    "form",
+    "input"
+  ],
+  "author": "Ernest Surudo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elsurudo/jquery.toggle-visibility/issues"
+  },
+  "homepage": "http://www.twisted-leaf.com/project/jquery-toggle-visibility"
+}
