@@ -1,6 +1,6 @@
 {
   "name": "jquery.toggle-visibility",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A jQuery plugin to declaratively toggle the visibility of elements based on form input selections.",
   "dependencies": {
     "jquery": "^3.3.1"
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "jquery",
-    "plugin",
+    "jquery-plugin",
     "toggle",
     "visibility",
     "form",
