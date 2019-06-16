@@ -59,6 +59,19 @@ Simply give a checkbox input a `data-toggle-element` of the selector you wish to
 </form>
 ```
 
+You can also invert the checkbox behaviour (hide on checked) by setting the `data-toggle-element-invert` to `true`, like so:
+
+```html
+<form>
+  <label>
+    <input type='checkbox' data-toggle-element='.checkbox-is-unchecked' data-toggle-element-invert='true'>
+    Check me
+  </label>
+
+  <div class='checkbox-is-checked'>The checkbox is not checked!</div>
+</form>
+```
+
 ### Radio
 
 Give all related radio button inputs a `data-toggle-element` of the selector that selects all the possible elements you wish to show/hide based on the value of the radio button. There should be one element per possible value of the radio button.

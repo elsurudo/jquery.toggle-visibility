@@ -3,7 +3,12 @@
     const changeFn = function() {
       if ($(this).is(':checkbox')) {
         const el = $($(this).data('toggle-element'));
-        $(this).is(':checked') ? el.removeClass('hidden') : el.addClass('hidden');
+        const invert = $(this).data('toggle-element-invert');
+        if (invert) {
+          $(this).is(':checked') ? el.addClass('hidden') : el.removeClass('hidden');
+        } else {
+          $(this).is(':checked') ? el.removeClass('hidden') : el.addClass('hidden');
+        }
       } else if ($(this).is(':radio')) {
         const els = $($(this).data('toggle-element'));
         const val = $(this).closest('form').find("input[name='" + $(this).attr('name') + "']:checked").val();
