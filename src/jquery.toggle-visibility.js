@@ -10,13 +10,16 @@
           $(this).is(':checked') ? el.removeClass('hidden') : el.addClass('hidden');
         }
       } else if ($(this).is(':radio')) {
+        const eventElem = this;
         const els = $($(this).data('toggle-element'));
-        const val = $(this).closest('form').find("input[name='" + $(this).attr('name') + "']:checked").val();
+        const val = $(this).filter(":checked").val();
         els.each(function() {
+          const invert = $(eventElem).data('toggle-element-invert');
+
           if ($(this).attr('data-toggle-element-value') == val) {
-            $(this).removeClass('hidden');
+            invert ? $(this).addClass('hidden') : $(this).removeClass('hidden');
           } else {
-            $(this).addClass('hidden');
+            invert ? $(this).removeClass('hidden') : $(this).addClass('hidden');
           }
         });
       } else if ($(this).is('select')) {

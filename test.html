@@ -13,6 +13,8 @@
 
     <h2>Checkbox</h2>
 
+    <h3>Basic</h3>
+
     <form>
       <label>
         <input type='checkbox' data-toggle-element='.checkbox-is-checked'></form>
@@ -22,16 +24,20 @@
 
     <div class='checkbox-is-checked'>The checkbox is checked!</div>
 
+    <h3>Inverted</h3>
+
     <form>
       <label>
-        <input type='checkbox' data-toggle-element='.checkbox-is-checked-invert' data-toggle-element-invert='true'></form>
-        Check me (inverted)
+        <input type='checkbox' data-toggle-element='.checkbox-is-checked-inverted' data-toggle-element-invert='true'></form>
+        Check me
       </label>
     </form>
 
-    <div class='checkbox-is-checked-invert'>The checkbox is not checked!</div>
+    <div class='checkbox-is-checked-inverted'>The checkbox is not checked!</div>
 
     <h2>Radio</h2>
+
+    <h3>Basic</h3>
 
     <form>
       <label>
@@ -51,6 +57,27 @@
     <div class='radio-button-selections' data-toggle-element-value='one'>One is selected</div>
     <div class='radio-button-selections' data-toggle-element-value='two'>Two is selected</div>
     <div class='radio-button-selections' data-toggle-element-value='three'>Three is selected</div>
+
+    <h3>Inverted</h3>
+
+    <form>
+      <label>
+        <input type='radio' name='radio-buttons' value='one' data-toggle-element='.radio-button-selections-inverted' data-toggle-element-invert='true'>
+        One
+      </label>
+      <label>
+        <input type='radio' name='radio-buttons' value='two' data-toggle-element='.radio-button-selections-inverted' data-toggle-element-invert='true'>
+        Two
+      </label>
+      <label>
+        <input type='radio' name='radio-buttons' value='three' data-toggle-element='.radio-button-selections-inverted' data-toggle-element-invert='true'>
+        Three
+      </label>
+    </form>
+
+    <div class='radio-button-selections-inverted' data-toggle-element-value='one'>One is not selected</div>
+    <div class='radio-button-selections-inverted' data-toggle-element-value='two'>Two is not selected</div>
+    <div class='radio-button-selections-inverted' data-toggle-element-value='three'>Three is not selected</div>
 
     <h2>Select</h2>
 
