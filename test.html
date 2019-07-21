@@ -28,12 +28,14 @@
 
     <form>
       <label>
-        <input type='checkbox' data-toggle-element='.checkbox-is-checked-inverted' data-toggle-element-invert='true'></form>
+        <input type='checkbox' data-toggle-element='.checkbox-is-checked-inverted'></form>
         Check me
       </label>
     </form>
 
-    <div class='checkbox-is-checked-inverted'>The checkbox is not checked!</div>
+    <div class='checkbox-is-checked-inverted' data-toggle-element-invert='true'>
+      The checkbox is not checked!
+    </div>
 
     <h2>Radio</h2>
 
@@ -62,7 +64,7 @@
 
     <form>
       <label>
-        <input type='radio' name='radio-buttons' value='one' data-toggle-element='.radio-button-selections-inverted' data-toggle-element-invert='true'>
+        <input type='radio' name='radio-buttons' value='one' data-toggle-element='.radio-button-selections-inverted'>
         One
       </label>
       <label>
@@ -75,9 +77,15 @@
       </label>
     </form>
 
-    <div class='radio-button-selections-inverted' data-toggle-element-value='one'>One is not selected</div>
-    <div class='radio-button-selections-inverted' data-toggle-element-value='two'>Two is not selected</div>
-    <div class='radio-button-selections-inverted' data-toggle-element-value='three'>Three is not selected</div>
+    <div class='radio-button-selections-inverted' data-toggle-element-value='one' data-toggle-element-invert='true'>
+      One is not selected
+    </div>
+    <div class='radio-button-selections-inverted' data-toggle-element-value='two' data-toggle-element-invert='true'>
+      Two is not selected
+    </div>
+    <div class='radio-button-selections-inverted' data-toggle-element-value='three' data-toggle-element-invert='true'>
+      Three is not selected
+    </div>
 
     <h2>Select</h2>
 

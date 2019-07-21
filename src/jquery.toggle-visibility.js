@@ -3,7 +3,7 @@
     const changeFn = function() {
       if ($(this).is(':checkbox')) {
         const el = $($(this).data('toggle-element'));
-        const invert = $(this).data('toggle-element-invert');
+        const invert = $(el).data('toggle-element-invert');
         if (invert) {
           $(this).is(':checked') ? el.addClass('hidden') : el.removeClass('hidden');
         } else {
@@ -14,7 +14,7 @@
         const els = $($(this).data('toggle-element'));
         const val = $(this).filter(":checked").val();
         els.each(function() {
-          const invert = $(eventElem).data('toggle-element-invert');
+          const invert = $(this).data('toggle-element-invert');
 
           if ($(this).attr('data-toggle-element-value') == val) {
             invert ? $(this).addClass('hidden') : $(this).removeClass('hidden');

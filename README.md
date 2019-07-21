@@ -64,11 +64,13 @@ You can also invert the checkbox behaviour (hide on checked) by setting the `dat
 ```html
 <form>
   <label>
-    <input type='checkbox' data-toggle-element='.checkbox-is-unchecked' data-toggle-element-invert='true'>
+    <input type='checkbox' data-toggle-element='.checkbox-is-unchecked'>
     Check me
   </label>
 
-  <div class='checkbox-is-checked'>The checkbox is not checked!</div>
+  <div class='checkbox-is-checked' data-toggle-element-invert='true'>
+    The checkbox is not checked!
+  </div>
 </form>
 ```
 
@@ -96,6 +98,35 @@ Give each of the elements that you wish to show/hide a `data-toggle-element-valu
   <div class='radio-button-selections' data-toggle-element-value='one'>Selection: One</div>
   <div class='radio-button-selections' data-toggle-element-value='two'>Selection: Two</div>
   <div class='radio-button-selections' data-toggle-element-value='three'>Selection: Three</div>
+</form>
+```
+
+You can also invert the hide/show behaviour (hide on checked) by setting the `data-toggle-element-invert` to `true`, like so:
+
+```html
+<form>
+  <label>
+    <input type='radio' name='radio-buttons' value='one' data-toggle-element='.radio-button-selections'>
+    One
+  </label>
+  <label>
+    <input type='radio' name='radio-buttons' value='two' data-toggle-element='.radio-button-selections'>
+    Two
+  </label>
+  <label>
+    <input type='radio' name='radio-buttons' value='three' data-toggle-element='.radio-button-selections'>
+    Three
+  </label>
+
+  <div class='radio-button-selections' data-toggle-element-value='one' data-toggle-element-invert='true'>
+    Not selected: One
+  </div>
+  <div class='radio-button-selections' data-toggle-element-value='two' data-toggle-element-invert='true'>
+    Not selected: Two
+  </div>
+  <div class='radio-button-selections' data-toggle-element-value='three' data-toggle-element-invert='true'>
+    Not selected: Three
+  </div>
 </form>
 ```
 
