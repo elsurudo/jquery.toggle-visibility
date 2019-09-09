@@ -12,7 +12,7 @@
       } else if ($(this).is(':radio')) {
         const eventElem = this;
         const els = $($(this).data('toggle-element'));
-        const val = $(this).filter(":checked").val();
+        const val = $("input[name='" + $(this).attr('name') + "']:checked").val();
         els.each(function() {
           const invert = $(this).data('toggle-element-invert');
 
