@@ -6,7 +6,7 @@ The general philosophy here is that declarative is better than imperative. Using
 
 Using nesting, you can make some pretty complex interactions possible without writing any code at all – you just need to add the proper `data-*` selectors. However, this is really meant for simple interactions – anything too complex, and you might want to consider a real framework, such as Vue or React.
 
-[View usage examples](http://www.twisted-leaf.com/projects/jquery_toggle_visibility)
+See usage examples by cloning the repository and opening `test.html`.
 
 ## Installation
 
@@ -59,7 +59,7 @@ Simply give a checkbox input a `data-toggle-element` of the selector you wish to
 </form>
 ```
 
-You can also invert the checkbox behaviour (hide on checked) by setting the `data-toggle-element-invert` to `true`, like so:
+You can also invert the checkbox behaviour (hide on checked) by setting the `data-toggle-element-invert` of the _target_ elements to `true`, like so:
 
 ```html
 <form>
@@ -101,7 +101,7 @@ Give each of the elements that you wish to show/hide a `data-toggle-element-valu
 </form>
 ```
 
-You can also invert the hide/show behaviour (hide on checked) by setting the `data-toggle-element-invert` to `true`, like so:
+You can also invert the hide/show behaviour (hide on checked) by setting the `data-toggle-element-invert` on the _target_ elements to `true`, like so:
 
 ```html
 <form>
